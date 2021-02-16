@@ -18,16 +18,16 @@ for (const afbeelding of document.querySelectorAll("#initialiseer a")) {
 
         //Berekening winnaar:
         const winnaar = document.getElementById("winnaar");
-        if (keuzeGebruiker === `${keuzeComputer}`) {
+        if (keuzeGebruiker == `${keuzeComputer}`) {
             winnaar.innerText = "Gelijkspel.";
-        } else if (keuzeGebruiker === 0 && `${keuzeComputer}` === 1) {
-            winnaar.innerText = "Winnaar 1";
-        } else if (keuzeGebruiker === 1 && `${keuzeComputer}` === 2) {
-            winnaar.innerText = "Winnaar 2";
-        } else if (keuzeGebruiker === 2 && `${keuzeComputer}` === 0) {
-            winnaar.innerText = "Winnaar 3";
+        } else if (keuzeGebruiker == 0 && `${keuzeComputer}` == 1) {
+            winnaar.innerText = "Jij wint!";
+        } else if (keuzeGebruiker == 1 && `${keuzeComputer}` == 2) {
+            winnaar.innerText = "Jij wint!";
+        } else if (keuzeGebruiker == 2 && `${keuzeComputer}` == 0) {
+            winnaar.innerText = "Jij wint!";
         } else {
-            winnaar.innerText = "Default."
+            winnaar.innerText = "Computer wint."
         }
     }
 }
